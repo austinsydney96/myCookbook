@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Our Cookbook </title>
+        <link rel="stylesheet" type="text/css" href=homecss.css>
+    </head>
+  
+<body>
+    <h1> Our Cookbook </h1>
+    <div class="logopic">
+    <a href="recipes.html"><IMG SRC="foodicon.jpg"></a>
+    </div>
+
+<div class="navbar">
+    <a href="recipes.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Cuisines
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+            <a href="Jambalah.html">American</a>
+            <a href="asian.html">Asian</a>
+            <a href="italian.html">Italian</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="desserts.html">Dessert</a>
+      </div>
+    </div>
+  </div>
+        </div>
+
+        <div class="gallery1" style= max width: 500px;>
+            <IMG class= "gallery" SRC= "buffalo.jpg">
+            <IMG class= "gallery" SRC= "teriyaki.jpg">
+            <IMG class= "gallery" SRC= "lasagna.jpg">
+            <IMG class= "gallery" SRC= "taco.jpg">
+            <IMG class= "gallery" SRC= "tiramisu.jpg">
+            <IMG class= "gallery" SRC= "maitai.jpg">
+            <IMG class= "gallery" SRC= "jampic.jpg">
+            <IMG class= "gallery" SRC= "cheesecake.jpg">
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("gallery");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+        <aside>
+            <p>
+               "No one is born a good cook. One learns by doing."
+               - Julia Child
+            </p>
+        </aside>
+        </div>
+
+        <article>
+            <h2>Notes</h2>
+            <p> This website contains our favorite recipes that we have made over the past few years of learning to cook.</p>
+        </article>
+    </body>
+</html>
